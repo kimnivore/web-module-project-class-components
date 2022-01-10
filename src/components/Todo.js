@@ -1,15 +1,14 @@
 import React from 'react';
 
-const Todo = props => {
-    const handleClick = () => {
-    props.handleToggleTodo(props.todo);
+class Todo extends React.Component {
+    // handleClick = () => {
+    // props.handleToggleTodo(this.props.item);
+    // }
+    render() {
+        return (
+        <li>{this.props.todo.task} { this.props.todo.completed ? <span>- completed</span> : <span></span> } </li>
+        )
+        }
 }
-
-return (
-    <div onClick={handleClick}>
-        <p>{props.todo.task}</p>
-    </div>
-)
-};
 
 export default Todo;

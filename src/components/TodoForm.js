@@ -27,10 +27,11 @@ class TodoForm extends React.Component {
                 onChange={this.handleChange}
                 type='text'
                 name='todo'
-                placeholder='..todo'
+                placeholder='...todo'
                 />
+                <button onClick={this.handleAddTodo}>Add Todo</button>
             </form>
-        )
+        );
     }
     }
 
